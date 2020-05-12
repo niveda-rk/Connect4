@@ -16,6 +16,9 @@ public class GameTree {
     // returns the column number, when the coin is dropped in that returned column, its the best possible move
     public int returnNextGoodMove(){
         for(GameTree nextMove:nextMoves)
+            System.out.print(nextMove.score+" ");
+        System.out.println();
+        for(GameTree nextMove:nextMoves)
             if(score == nextMove.score)
                 return nextMove.currentState.pos;
         return 0;

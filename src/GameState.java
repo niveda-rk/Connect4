@@ -232,5 +232,6 @@ public class GameState {
         status = ' ';
         choice = -1;
         temp = -1;
+        aiPos = -1;
     }
 }

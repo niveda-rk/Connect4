@@ -6,7 +6,7 @@ import java.awt.event.KeyListener;
  */
 public class KeyManager implements KeyListener {
     private GameState state;   // current state of the game
-    private int a,d,left,up,right,down,space,enter,shift;
+    private int a,d,left,up,right,down,space,enter;
 
     public KeyManager(GameState state){
         this.state = state;
@@ -18,7 +18,6 @@ public class KeyManager implements KeyListener {
         down = 40;
         space = 32;
         enter = 10;
-        shift = 16;
     }
 
     @Override
