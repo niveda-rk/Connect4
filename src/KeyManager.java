@@ -58,6 +58,7 @@ public class KeyManager implements KeyListener {
                     state.pos = tree.returnNextGoodMove();
                     state.updateCoins();
                     state.swapPlayer();
+                    state.aiPos = state.pos;
                 }
                 state.pos = 0;
                 while (state.pos < state.dim && state.coins[0][state.pos] != ' ')

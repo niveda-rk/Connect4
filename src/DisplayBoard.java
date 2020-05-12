@@ -43,14 +43,16 @@ public class DisplayBoard {
         }
         else {
             g.setColor( state.getCurrentPlayer() == 'g' ? Color.green : Color.orange);
-            String str = ((state.getCurrentPlayer() == 'g' ? "Green" : "Orange") + "'s chance." );
+            String str = ((state.getCurrentPlayer() == 'g' ? "Green" : "Orange") + "'s chance" );
             if(state.choice==2) {
                 if (state.isEmptyBoard())
-                    str = str + "Press SPACE for Comp's chance.";
-                else if (state.getCurrentPlayer() == 'o')
-                    str = str + "Coin dropped in column " + (state.aiPos + 1) + ". \nPress SPACE to drop coin";
-            }else if (state.getCurrentPlayer() == 'g')
-                str = str + "Coin dropped in column " + (state.aiPos + 1) + ". \nPress SPACE to drop coin";
+                    str = str + ".Press SPACE for Comp's chance";
+                else if (state.getCurrentPlayer() == 'o' && state.aiPos != -1)
+                    str = str + ".Coin dropped in column " + (state.aiPos + 1) ;
+            }else if (state.getCurrentPlayer() == 'g' && state.aiPos !=  -1)
+                str = str + ".Coin dropped in column " + (state.aiPos + 1) ;
+            if(!state.isEmptyBoard())
+                str = str + ".Press SPACE to drop coin";
             return str;
         }
     }

@@ -8,8 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="6ac99ee8-709e-4c86-832a-e8d19e0a99a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Connect4/DisplayBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/DisplayBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Connect4/GameDisplay.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/GameDisplay.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Connect4/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Connect4/KeyManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/KeyManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DisplayBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDisplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyManager.java" afterDir="false" />
     </list>
@@ -75,7 +78,19 @@
       <option name="presentableId" value="Default" />
       <updated>1587643649156</updated>
     </task>
+    <task id="LOCAL-00001" summary="Connect4">
+      <created>1589289443118</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589289443118</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Connect4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connect4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1587644770105">
@@ -90,29 +105,37 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="443" y="232" width="394" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1589284534966" />
+    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1589289441968">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589289441968" />
     <state x="421" y="0" width="438" height="418" key="FileChooserDialogImpl" timestamp="1588714792299">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="0" width="438" height="418" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588714792299" />
-    <state width="1237" height="64" key="GridCell.Tab.0.bottom" timestamp="1589289348360">
+    <state width="1237" height="52" key="GridCell.Tab.0.bottom" timestamp="1589304496787">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="64" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589289348360" />
-    <state width="1237" height="64" key="GridCell.Tab.0.center" timestamp="1589289348359">
+    <state width="1237" height="52" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589304496787" />
+    <state width="1237" height="52" key="GridCell.Tab.0.center" timestamp="1589304496787">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="64" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589289348359" />
-    <state width="1237" height="64" key="GridCell.Tab.0.left" timestamp="1589289348359">
+    <state width="1237" height="52" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589304496787" />
+    <state width="1237" height="52" key="GridCell.Tab.0.left" timestamp="1589304496787">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="64" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589289348359" />
-    <state width="1237" height="64" key="GridCell.Tab.0.right" timestamp="1589289348360">
+    <state width="1237" height="52" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589304496787" />
+    <state width="1237" height="52" key="GridCell.Tab.0.right" timestamp="1589304496787">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="64" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589289348360" />
+    <state width="1237" height="52" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589304496787" />
     <state x="121" y="0" key="SettingsEditor" timestamp="1588691421756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588691421756" />
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1589289470822">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589289470822" />
   </component>
 </project>

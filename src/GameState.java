@@ -66,6 +66,7 @@ public class GameState {
     public GameState(){
         choice = -1;
         temp = -1;
+        aiPos = -1;
         //initialise coins to default array of black spaces
         emptyBoard();
         //first player to play is 'g'
