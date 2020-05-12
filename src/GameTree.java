@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * This class gives a good next move
@@ -13,15 +14,16 @@ public class GameTree {
     private int layerNo;    // current layer number in the tree made
     private int score;      // score in current node in game tree
 
+
     // returns the column number, when the coin is dropped in that returned column, its the best possible move
     public int returnNextGoodMove(){
-        for(GameTree nextMove:nextMoves)
-            System.out.print(nextMove.score+" ");
-        System.out.println();
+        List<GameTree> temps = new ArrayList<>();
         for(GameTree nextMove:nextMoves)
             if(score == nextMove.score)
-                return nextMove.currentState.pos;
-        return 0;
+                temps.add(nextMove);
+        Random random = new Random();
+        GameTree h = temps.get( random.nextInt(temps.size()));
+        return h.currentState.pos;
     }
 
     // finds all possible next moves
