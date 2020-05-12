@@ -10,6 +10,7 @@ public class GameDisplay {
     private Canvas canvas; // canvas on which the board is gonna be drawn
 
     private DisplayBoard disb;  // used to display various features in the connect 4 board
+    private DisplayMenu dism;
 
     /**
      * creates canvas to draw the board on it
@@ -23,6 +24,7 @@ public class GameDisplay {
         this.title = title;
 
         disb = new DisplayBoard(width,height);
+        dism = new DisplayMenu(width,height);
 
         createDisplay();
     }
@@ -62,6 +64,9 @@ public class GameDisplay {
      * @param state current state of the game
      */
     public void display(GameState state){
-        disb.render(canvas,state);
+        if(state.choice==-1)
+            dism.render(canvas,state.temp);
+        else
+            disb.render(canvas,state);
     }
 }

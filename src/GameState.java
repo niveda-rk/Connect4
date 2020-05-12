@@ -5,13 +5,15 @@
  */
 public class GameState {
 
+    public int choice;
+    public int temp;
+
     private char currentPlayer;         //'g' or 'o'
     public final int dim = 7;           // dimension of the board
 
     public int pos ;                    //for drawing the moving coin on top of the board for the player to make choice
     private int rowOfLastcoin;          // row of the coin added last to the board
-    private int rowOfNextGoodMove;      // row of the next good move
-    private int posOfNextGoodMove;      // column of the next good move
+    public int aiPos;                   // column of the next good move
 
     public char[][] coins = new char[dim][dim];  // board matrix, ' ' if no coin, 'g' if green coin, 'o' if orange coin
 
@@ -24,12 +26,6 @@ public class GameState {
 
     // getter function that returns the current status of the game
     public char getStatus(){ return status;  }
-
-    // getter function that returns the position/column of the next good move
-    public int getPosOfNextGoodMove(){  return posOfNextGoodMove;  }
-
-    // sets or assigns the pos of next good move variable with the value in its parameter
-    public void setPosOfNextGoodMove(int p){  posOfNextGoodMove = p ; }
 
     /**
      * to make a copy of this instance
@@ -68,6 +64,8 @@ public class GameState {
      * initialises all variables in this class
      */
     public GameState(){
+        choice = -1;
+        temp = -1;
         //initialise coins to default array of black spaces
         emptyBoard();
         //first player to play is 'g'
@@ -84,27 +82,15 @@ public class GameState {
         currentPlayer = currentPlayer == 'g' ? 'o' : 'g';
     }
 
-    // adds grey coin indicating position of good move
-    public void addGoodMove(){
-        for(int i = dim-1 ; i >=0 ; i--)
-            if(coins[i][posOfNextGoodMove]==' ') {
-                coins[i][posOfNextGoodMove] = 'x';
-                rowOfNextGoodMove = i;
-                break;
-            }
-    }
 
     // adds coin in the 'pos' column
     public void updateCoins(){
-        if(posOfNextGoodMove!=-1)
-            coins[rowOfNextGoodMove][posOfNextGoodMove]=' ';
         for(int i = dim-1 ; i >=0 ; i--)
             if(coins[i][pos]==' ') {
                 coins[i][pos] = currentPlayer;
                 rowOfLastcoin=i;
                 break;
             }
-        posOfNextGoodMove = -1;
         statusUpdate();
     }
 
@@ -115,6 +101,14 @@ public class GameState {
     private void highlightWin(int len){
         for(int i=0;i<len;i++)
             coins[arr[i][0]][arr[i][1]] = 'r';
+    }
+
+    // returns if the board is empty
+    public boolean isEmptyBoard(){
+        for(int i=0;i<dim;i++)
+            if(coins[dim-1][i]!=' ')
+                return false;
+        return true;
     }
 
     // returns if the board, ie the coins arr, is full, therefore returns is its a draw
@@ -235,5 +229,7 @@ public class GameState {
         emptyBoard();
         currentPlayer = 'g';
         status = ' ';
+        choice = -1;
+        temp = -1;
     }
 }

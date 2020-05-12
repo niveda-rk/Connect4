@@ -31,26 +31,34 @@ public class DisplayBoard {
     private String retStatusAndSetColor(){
         if(state.getStatus()=='d') {
             g.setColor(Color.blue);
-            return "IT'S A DRAW!!! NEW GAME? Press Enter or space";
+            return "IT'S A DRAW!!! NEW GAME? Press ENTER to continue";
         }
         else if(state.getStatus()=='g') {
             g.setColor(Color.green);
-            return "GREEN WINS!!! NEW GAME? Press Enter or space";
+            return "GREEN WINS!!! NEW GAME? Press ENTER to continue";
         }
         else if(state.getStatus()=='o') {
             g.setColor(Color.orange);
-            return "ORANGE WINS!!! NEW GAME? Press Enter or space";
+            return "ORANGE WINS!!! NEW GAME? Press ENTER to continue";
         }
         else {
             g.setColor( state.getCurrentPlayer() == 'g' ? Color.green : Color.orange);
-            return ((state.getCurrentPlayer() == 'g' ? "Green" : "Orange") + "'s chance now. SHIFT for next good move" );
+            String str = ((state.getCurrentPlayer() == 'g' ? "Green" : "Orange") + "'s chance." );
+            if(state.choice==2) {
+                if (state.isEmptyBoard())
+                    str = str + "Press SPACE for Comp's chance.";
+                else if (state.getCurrentPlayer() == 'o')
+                    str = str + "Coin dropped in column " + (state.aiPos + 1) + ". \nPress SPACE to drop coin";
+            }else if (state.getCurrentPlayer() == 'g')
+                str = str + "Coin dropped in column " + (state.aiPos + 1) + ". \nPress SPACE to drop coin";
+            return str;
         }
     }
 
     //Prints which players chance it is
     private void renderStatus(){
         String lineToPrint = retStatusAndSetColor();
-        g.setFont( new Font("Monospaced", Font.BOLD , 20));
+        g.setFont( new Font("Monospaced", Font.BOLD , 14));
         g.drawString(lineToPrint, 20, height-20);
     }
 
@@ -80,7 +88,6 @@ public class DisplayBoard {
                 break;
             case 'r':   g.setColor(Color.red);
                 break;
-            case 'x':   g.setColor(Color.gray);
         }
     }
 
