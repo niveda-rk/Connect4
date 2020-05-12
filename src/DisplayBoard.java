@@ -51,7 +51,7 @@ public class DisplayBoard {
                     str = str + ".Coin dropped in column " + (state.aiPos + 1) ;
             }else if (state.getCurrentPlayer() == 'g' && state.aiPos !=  -1)
                 str = str + ".Coin dropped in column " + (state.aiPos + 1) ;
-            if(!state.isEmptyBoard())
+            if(!state.isEmptyBoard() || state.getCurrentPlayer()=='g')
                 str = str + ".Press SPACE to drop coin";
             return str;
         }
