@@ -10,7 +10,7 @@ public class GameDisplay {
     private Canvas canvas; // canvas on which the board is gonna be drawn
 
     private DisplayBoard disb;  // used to display various features in the connect 4 board
-    private DisplayMenu dism;
+    private DisplayMenu dism;   // used to display the main menu of the game
 
     /**
      * creates canvas to draw the board on it

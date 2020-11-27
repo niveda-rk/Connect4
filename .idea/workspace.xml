@@ -8,9 +8,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6ac99ee8-709e-4c86-832a-e8d19e0a99a9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Connect4/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Connect4/DisplayMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/DisplayMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Connect4/GameTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Connect4/GameTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DisplayMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DisplayMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameDisplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameDisplay.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589307515733</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Connect4">
+      <created>1589309416750</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589309416750</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -111,61 +119,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Connect4" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="2" key="#Notifications" timestamp="1589304604823">
+    <state width="1237" height="63" key="GridCell.Tab.0.bottom" timestamp="1598279706575">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="2" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1589304604823" />
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser" timestamp="1587644770105">
+    <state width="1237" height="63" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1598279706575" />
+    <state width="1237" height="63" key="GridCell.Tab.0.center" timestamp="1598279706575">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="446" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1587644770105" />
-    <state x="370" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588691400807">
+    <state width="1237" height="63" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1598279706575" />
+    <state width="1237" height="63" key="GridCell.Tab.0.left" timestamp="1598279706574">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="370" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1588691400807" />
-    <state x="443" y="232" width="394" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1589284534966">
+    <state width="1237" height="63" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1598279706574" />
+    <state width="1237" height="63" key="GridCell.Tab.0.right" timestamp="1598279706575">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="443" y="232" width="394" height="220" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1280.680@0.0.1280.680" timestamp="1589284534966" />
-    <state x="309" y="0" key="CommitChangelistDialog2" timestamp="1589307513805">
+    <state width="1237" height="63" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1598279706575" />
+    <state x="349" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1606491261730">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="309" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1589307513805" />
-    <state x="421" y="0" width="438" height="418" key="FileChooserDialogImpl" timestamp="1588714792299">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="421" y="0" width="438" height="418" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1588714792299" />
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom" timestamp="1589309112215">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589309112215" />
-    <state width="1237" height="136" key="GridCell.Tab.0.center" timestamp="1589309112215">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589309112215" />
-    <state width="1237" height="136" key="GridCell.Tab.0.left" timestamp="1589309112215">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589309112215" />
-    <state width="1237" height="136" key="GridCell.Tab.0.right" timestamp="1589309112215">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="136" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589309112215" />
-    <state x="121" y="0" key="SettingsEditor" timestamp="1588691421756">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="121" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1588691421756" />
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2" timestamp="1589307523595">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="77" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589307523595" />
-    <state x="349" y="169" key="com.intellij.ide.util.TipDialog" timestamp="1589307127793">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="349" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1589307127793" />
-    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589306849438">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="452" y="260" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589306849438" />
+    <state x="349" y="169" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1606491261730" />
   </component>
 </project>

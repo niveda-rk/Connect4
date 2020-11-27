@@ -46,14 +46,6 @@ public class DisplayMenu {
         printChoice();
     }
 
-    private void renderBox(){
-        g.setColor(Color.blue);
-        switch(choice){
-            case 0:
-
-        }
-    }
-
     public void render(Canvas canvas,int choice){
         BufferStrategy bs = canvas.getBufferStrategy();
         if(bs == null){
@@ -68,9 +60,7 @@ public class DisplayMenu {
         g.setColor(Color.black);
         g.fillRect(0,0,width,height);
         renderMessages();
-        if(choice!=-1)
-            renderBox();
-
+        
         //End drawing here
         bs.show();
         g.dispose();
